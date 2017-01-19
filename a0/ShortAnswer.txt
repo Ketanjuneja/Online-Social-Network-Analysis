@@ -1,0 +1,65 @@
+Enter your responses inline below and push this file to your private GitHub
+repository.
+
+
+1. Assume I plan to use the friend_overlap function above to quantify the
+similarity of two users. E.g., because 344 is larger than 1, I conclude that
+Jill Stein and Gary Johnson are more similar than Hillary Clinton and Donald
+Trump.
+
+How is this approach misleading? How might you fix it?
+Solution:
+This approach is misleading as Jill Stein and Gary Johnson follow a lot of people as compared to Hilary Clinton and Donald Trump.If we prefer to take the percentage of users that are common for example if user A has 200 friends and User B has 100 friends and  they have 50 friends in common and user C has 20 friends and user D has 10 friends and  they have 6 friends in common  , then effectively C and D are more similar as common friends to total friends ratio is quite high(6/24 vs 50/250).
+
+
+
+
+
+
+
+
+
+2. Looking at the output of your followed_by_hillary_and_donald function, why
+do you think this user is followed by both Hilary Clinton and Donald Trump,
+who are rivals? Do some web searches to see if you can find out more
+information.
+Solution:
+Hilary Clinton follows Magic Johnson as he is an active supporter of the Decomcratic party and he also endosed her for her presidential campaign 2007. Donald Trump has always had good relations with Magic Johnson and Magic Johnson has never said anything bad about Donald Trump and appreciates the Trump Hotels.Besides, Magic Johnson is also an eminent sport person and hence both Hilary and Donald follow him. 
+
+
+
+
+
+
+
+
+
+
+
+
+3. There is a big difference in how many accounts each candidate follows (Gary
+Johnson follows over 3K accounts, while Donald Trump follows less than
+50). Why do you think this is? How might that affect our analysis?
+Solution:
+Donald Trump only follows a few mostly family and business related.The reason being Donald Trump is already and well known figure and he is only friends with people who agree with his idealogies.On the contrary the popularity of Gary Johnson is quite less and hence needs more people to hear his voice.Hence following large number of people will help him get more supporters and more people to hear his voice. 
+
+
+
+
+
+
+
+
+4. The follower graph we've collected is incomplete. To expand it, we would
+have to also collect the list of accounts followed by each of the
+friends. That is, for each user X that Donald Trump follows, we would have to
+also collect all the users that X follows. Assuming we again use the API call
+https://dev.twitter.com/rest/reference/get/friends/ids, how many requests will
+we have to make? Given how Twitter does rate limiting
+(https://dev.twitter.com/rest/public/rate-limiting), approximately how many
+minutes will it take to collect this data?
+Solution:
+Let N be the total amount of followers all the users in Candidate.txt have.
+So per 15 min window we have 15 requests.So the total number of windows we require is N/15 and duration of each window is 15 mins.
+N = 4159 + 3124 + 748 + 42
+	= 8074 mins 

@@ -1,0 +1,5 @@
+
+ Total number of positive tweets:161
+ Example of positive tweet:@realDonaldTrump do you plan on making sure the army and other branches get paid better? please answer! #Trump #TrumpTrain
+ Total number of negative tweets:196
+ Example of negative tweet:#trump baiting his protestors? Will they now #burntheflag as a form of protest toward him? If so, the focus of thei… https://t.co/k3jzfnh2VM
